@@ -1,0 +1,119 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_application_1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:34:5-66
+14-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:34:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:36:5-79
+15-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:36:22-76
+16    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" /> <!-- Nest within the manifest element, not the application element -->
+16-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:35:5-76
+16-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:35:22-74
+17    <queries>
+17-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:38:5-51:15
+18        <intent>
+18-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:39:9-42:18
+19            <action android:name="android.intent.action.VIEW" />
+19-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:40:13-65
+19-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:40:21-62
+20
+21            <data android:scheme="https" />
+21-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:41:13-44
+21-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:41:19-41
+22        </intent>
+23        <intent>
+23-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:43:9-46:18
+24            <action android:name="android.intent.action.DIAL" />
+24-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:44:13-65
+24-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:44:21-62
+25
+26            <data android:scheme="tel" />
+26-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:41:13-44
+26-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:41:19-41
+27        </intent>
+28        <intent>
+28-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:47:9-50:18
+29            <action android:name="android.intent.action.SEND" />
+29-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:48:13-65
+29-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:48:21-62
+30
+31            <data android:mimeType="*/*" />
+31-->C:\Users\Justas\Desktop\Visma\flutter_application_1\android\app\src\main\AndroidManifest.xml:41:13-44
+32        </intent>
+33    </queries>
+34
+35    <application
+36        android:name="android.app.Application"
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.6.0] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+38        android:debuggable="true"
+39        android:icon="@mipmap/ic_launcher"
+40        android:label="flutter_application_1" >
+41        <activity
+42            android:name="com.example.flutter_application_1.MainActivity"
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+44            android:exported="true"
+45            android:hardwareAccelerated="true"
+46            android:launchMode="singleTop"
+47            android:theme="@style/LaunchTheme"
+48            android:windowSoftInputMode="adjustResize" >
+49
+50            <!--
+51                 Specifies an Android theme to apply to this Activity as soon as
+52                 the Android process has started. This theme is visible to the user
+53                 while the Flutter UI initializes. After that, this theme continues
+54                 to determine the Window background behind the Flutter UI.
+55            -->
+56            <meta-data
+57                android:name="io.flutter.embedding.android.NormalTheme"
+58                android:resource="@style/NormalTheme" />
+59
+60            <intent-filter>
+61                <action android:name="android.intent.action.MAIN" />
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+64            </intent-filter>
+65        </activity>
+66        <!--
+67             Don't delete the meta-data below.
+68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+69        -->
+70        <meta-data
+71            android:name="flutterEmbedding"
+72            android:value="2" />
+73
+74        <activity
+74-->[:url_launcher_android] C:\Users\Justas\Desktop\Visma\flutter_application_1\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+75            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+75-->[:url_launcher_android] C:\Users\Justas\Desktop\Visma\flutter_application_1\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+76            android:exported="false"
+76-->[:url_launcher_android] C:\Users\Justas\Desktop\Visma\flutter_application_1\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+77            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+77-->[:url_launcher_android] C:\Users\Justas\Desktop\Visma\flutter_application_1\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+78
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+80            android:name="androidx.window.extensions"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+82        <uses-library
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+83            android:name="androidx.window.sidecar"
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+84            android:required="false" />
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\Justas\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+85    </application>
+86
+87</manifest>
